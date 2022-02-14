@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubViewController" customModule="UI_Day2" customModuleProvider="target">
+            <connections>
+                <outlet property="nationalFlag" destination="MAV-i0-W5b" id="F8o-Kt-pgv"/>
+                <outlet property="nationalName" destination="pN8-36-QGS" id="xUj-lZ-3BN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAV-i0-W5b">
+                    <rect key="frame" x="32" y="76" width="350" height="224"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-36-QGS">
+                    <rect key="frame" x="32" y="332" width="350" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fVg-gb-Kgx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MAV-i0-W5b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Gs-Ix-MuW"/>
+                <constraint firstItem="MAV-i0-W5b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="DBC-I0-NG4"/>
+                <constraint firstItem="pN8-36-QGS" firstAttribute="top" secondItem="MAV-i0-W5b" secondAttribute="bottom" constant="32" id="Dk0-os-CB0"/>
+                <constraint firstItem="pN8-36-QGS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="IMV-aO-a2p"/>
+                <constraint firstItem="pN8-36-QGS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NZH-nP-k95"/>
+                <constraint firstItem="MAV-i0-W5b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="fuR-VU-C4d"/>
+                <constraint firstItem="MAV-i0-W5b" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/4" id="iZI-5T-bS7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

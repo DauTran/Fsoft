@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/CategoryAndCoinlistItem/Coinlist+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/CategoryAndCoinlistItem/Coinlist+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/CategoryAndCoinlistItem/Favorite+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/CategoryAndCoinlistItem/Favorite+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/Category+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dautt1/Desktop/MAD_ST_P1_DauTT1/Mock/Mock/Category+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Mock.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

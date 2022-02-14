@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H1030" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="descriptionCategory" optional="YES" attributeType="String"/>
+        <attribute name="idCategory" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Coinlist" representedClassName="Coinlist" syncable="YES">
+        <attribute name="category_ids" optional="YES" attributeType="String"/>
+        <attribute name="coin_code" optional="YES" attributeType="String"/>
+        <attribute name="coin_name" optional="YES" attributeType="String"/>
+        <attribute name="descriptionCoin" optional="YES" attributeType="String"/>
+        <attribute name="idCoin" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="logo_image" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Favorite" representedClassName="Favorite" syncable="YES">
+        <relationship name="coinlists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Coinlist"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Coinlist" positionX="313.21484375" positionY="75.74609375" width="128" height="148"/>
+        <element name="Favorite" positionX="88.76953125" positionY="18" width="128" height="58"/>
+    </elements>
+</model>

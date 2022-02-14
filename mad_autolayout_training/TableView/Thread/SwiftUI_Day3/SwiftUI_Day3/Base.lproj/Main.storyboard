@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftUI_Day3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGW-g3-RHU">
+                                <rect key="frame" x="32" y="76" width="350" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="oOm-25-y90"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ6-w0-KHR">
+                                <rect key="frame" x="145" y="418" width="124" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.53718114760000002" blue="0.44870602479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Image"/>
+                                <connections>
+                                    <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGI-2c-Rab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO5-9N-TS1">
+                                <rect key="frame" x="32" y="538" width="144" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.17592491690000001" blue="0.3069080501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Run OperationQueue">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="runOperationQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xK4-1U-wUC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NR-pP-ahS">
+                                <rect key="frame" x="245" y="538" width="137" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SGt-R7-Euk"/>
+                                </constraints>
+                                <state key="normal" title="Run BlockOperation">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="runBlockOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZy-HQ-3Xs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PGW-g3-RHU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="40X-rE-bzy"/>
+                            <constraint firstItem="zO5-9N-TS1" firstAttribute="leading" secondItem="PGW-g3-RHU" secondAttribute="leading" id="Hpb-J6-YbI"/>
+                            <constraint firstItem="4NR-pP-ahS" firstAttribute="trailing" secondItem="PGW-g3-RHU" secondAttribute="trailing" id="ISs-K0-9XS"/>
+                            <constraint firstItem="PGW-g3-RHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDg-yF-ExQ"/>
+                            <constraint firstItem="CZ6-w0-KHR" firstAttribute="top" secondItem="PGW-g3-RHU" secondAttribute="bottom" constant="70" id="R4d-1c-9ij"/>
+                            <constraint firstItem="zO5-9N-TS1" firstAttribute="firstBaseline" secondItem="4NR-pP-ahS" secondAttribute="baseline" id="WQ3-oQ-41b"/>
+                            <constraint firstItem="PGW-g3-RHU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Wlh-zt-7hi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CZ6-w0-KHR" secondAttribute="trailing" constant="145" id="jGC-eP-UqR"/>
+                            <constraint firstItem="CZ6-w0-KHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rNP-C7-AFP"/>
+                            <constraint firstItem="zO5-9N-TS1" firstAttribute="top" secondItem="4NR-pP-ahS" secondAttribute="top" id="tYN-z4-xai"/>
+                            <constraint firstItem="4NR-pP-ahS" firstAttribute="top" secondItem="CZ6-w0-KHR" secondAttribute="bottom" constant="90" id="v32-9R-NNh"/>
+                            <constraint firstItem="4NR-pP-ahS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zO5-9N-TS1" secondAttribute="trailing" constant="8" symbolic="YES" id="vqr-2h-Qzr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageVC" destination="PGW-g3-RHU" id="JSd-JX-YmL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

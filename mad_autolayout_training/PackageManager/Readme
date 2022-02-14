@@ -1,0 +1,23 @@
+What did you do?
+Sudo gem install cocoapods
+What did you expect to happen?
+cocoapods successfully installed
+What happened instead?
+ERROR:(package configuration for libffi is not found) /Library/Ruby/Gems/2.6.0/extensions/universal-darwin-19/2.6.0/ffi-1.15.5/mkmf.log
+
++ open /Library/Ruby/Gems/2.6.0/extensions/universal-darwin-19/2.6.0/ffi-1.15.5/mkmf.log
+
+
+
+SOVE THE ISSUE:
+Type commands in terminal
+
+-> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(ERROR: unable to access 'https //github.com/homebrew/brew/',may be not install homebrew run> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
+
+->> brew install cocoapods
+
+->>> pod setup
+
+->>>pod --version

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="UI_Day1" customModuleProvider="target">
+            <connections>
+                <outlet property="txtCompanyNameIcon" destination="Z2q-Sx-Kjj" id="9iP-T6-A5f"/>
+                <outlet property="txtEmailIcon" destination="8nU-HW-Y5J" id="hja-0e-WlR"/>
+                <outlet property="txtFullNameIcon" destination="1J8-QY-geR" id="vp7-zp-HBI"/>
+                <outlet property="txtPasswordIcon" destination="uYe-s6-fYj" id="nFr-dC-ds7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05g-Fd-bKr">
+                    <rect key="frame" x="32" y="239" width="311" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, register with email.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifh-2a-w6s">
+                    <rect key="frame" x="32" y="410" width="311" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-mF-DXq" userLabel="informationRegister">
+                    <rect key="frame" x="35" y="434.5" width="305" height="222.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nU-HW-Y5J">
+                            <rect key="frame" x="0.0" y="0.0" width="305" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pasword" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYe-s6-fYj">
+                            <rect key="frame" x="0.0" y="62" width="305" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1J8-QY-geR">
+                            <rect key="frame" x="0.0" y="124" width="305" height="36.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2q-Sx-Kjj">
+                            <rect key="frame" x="0.0" y="185.5" width="305" height="37"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bJV-pg-mfT">
+                    <rect key="frame" x="32" y="332" width="311" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-MK-kl8">
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="nLk-ck-Sn0"/>
+                            </constraints>
+                            <state key="normal" title="G/" image="iconGoogle"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-74-4Mv">
+                            <rect key="frame" x="103.5" y="0.0" width="104" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="op8-jZ-q70"/>
+                            </constraints>
+                            <state key="normal" title="F/" image="iconFace"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-yZ-IIv">
+                            <rect key="frame" x="207.5" y="0.0" width="103.5" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="fa6-4o-rXh"/>
+                                <constraint firstAttribute="height" constant="48" id="y0J-Aq-oCs"/>
+                            </constraints>
+                            <state key="normal" title="A/" image="iconApple"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="cwJ-vl-6B2">
+                    <rect key="frame" x="12" y="12" width="351" height="215"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ifh-2a-w6s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Sg-x2-mUk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qpm-mF-DXq" secondAttribute="bottom" constant="10" id="67O-Vi-8Cn"/>
+                <constraint firstItem="ifh-2a-w6s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="7PL-Tk-qPN"/>
+                <constraint firstItem="bJV-pg-mfT" firstAttribute="top" secondItem="05g-Fd-bKr" secondAttribute="bottom" constant="50" id="AqL-nl-bOu"/>
+                <constraint firstItem="05g-Fd-bKr" firstAttribute="top" secondItem="cwJ-vl-6B2" secondAttribute="bottom" constant="12" id="BmT-sz-Ner"/>
+                <constraint firstItem="qpm-mF-DXq" firstAttribute="top" secondItem="ifh-2a-w6s" secondAttribute="bottom" constant="10" id="Eni-C6-Yds"/>
+                <constraint firstItem="ifh-2a-w6s" firstAttribute="top" secondItem="bJV-pg-mfT" secondAttribute="bottom" constant="30" id="Fxc-Kh-BYl"/>
+                <constraint firstItem="bJV-pg-mfT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="Jkb-dK-823"/>
+                <constraint firstAttribute="trailing" secondItem="qpm-mF-DXq" secondAttribute="trailing" constant="35" id="OX6-FL-b9k"/>
+                <constraint firstItem="cwJ-vl-6B2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="Qvh-Pe-9TG"/>
+                <constraint firstItem="bJV-pg-mfT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZDc-Ar-JO0"/>
+                <constraint firstItem="05g-Fd-bKr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aeX-EI-zEe"/>
+                <constraint firstAttribute="trailing" secondItem="cwJ-vl-6B2" secondAttribute="trailing" constant="12" id="dOL-NL-DGi"/>
+                <constraint firstItem="qpm-mF-DXq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/3" id="iSy-BO-Lpd"/>
+                <constraint firstItem="05g-Fd-bKr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="jm6-YE-gxn"/>
+                <constraint firstItem="cwJ-vl-6B2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="qpE-eu-0Cu"/>
+                <constraint firstItem="qpm-mF-DXq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="tDq-nG-cZ3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="153.37331334332833"/>
+        </view>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mxB-aa-64J">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="132" y="39"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="iconApple" width="48" height="48"/>
+        <image name="iconFace" width="48" height="48"/>
+        <image name="iconGoogle" width="48" height="48"/>
+        <image name="register" width="882" height="912"/>
+    </resources>
+</document>
